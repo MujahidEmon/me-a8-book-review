@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div className="lg:max-w-6xl mx-auto work-sans">
+    <div className="lg:max-w-6xl work-sans mx-auto work-sans">
       <NavBar></NavBar>
       <Hero></Hero>
       <BookCard></BookCard>

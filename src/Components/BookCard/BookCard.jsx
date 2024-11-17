@@ -1,3 +1,5 @@
+import { CiStar } from "react-icons/ci";
+
 const BookCard = () => {
   return (
     <div className="card  p-5 border-2 w-96 shadow-xl">
@@ -12,11 +14,16 @@ const BookCard = () => {
             <h3 className="bg-[#23BE0A0A] text-[#23BE0A] w-fit px-3 py-1 font-bold rounded-full text-base">Young Adult</h3>
             <h3 className="bg-[#23BE0A0A] text-[#23BE0A] w-fit px-3 py-1 font-bold rounded-full text-base">Identity</h3>
       </div>
-      <div className=" items-center ">
+      <div className=" flex flex-col gap-y-2">
         <h2 className="font-bold text-2xl playFair">The Catcher in the Rye</h2>
         <p className="font-medium text-base">By : <span>Awlad Hossain</span></p>
-        <div className="card-actions">
-          <button className="btn btn-primary">Buy Now</button>
+        <div className="divider my-0"></div>
+        <div className="flex flex-row justify-between font-medium text-base">
+            <p>Fiction</p>
+            <div className="flex items-center flex-row gap-1">
+                <p>5.00</p>
+                <CiStar></CiStar>
+            </div>
         </div>
       </div>
     </div>

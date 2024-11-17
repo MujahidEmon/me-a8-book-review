@@ -1,4 +1,4 @@
-
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -26,13 +26,13 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
+              <NavLink>Home</NavLink>
             </li>
             <li>
-              <a>Listed Books</a>
+              <NavLink>Listed Books</NavLink>
             </li>
             <li>
-              <a>Pages to Read</a>
+              <NavLink>Pages to Read</NavLink>
             </li>
             <div className="navbar-end flex lg:flex-row flex-col items-center gap-2">
                 <a className="btn bg-[#23BE0A] text-white">Sign In</a>
@@ -40,18 +40,18 @@ const NavBar = () => {
             </div>
           </ul>
         </div>
-        <a className="btn btn-ghost font-bold lg:text-[28px] text-xl">Book Review</a>
+        <Link to={'/'} className="font-bold lg:text-[28px] text-xl">Book Review</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <NavLink to={'/'}>Home</NavLink>
           </li>
           <li>
-            <a>Listed Books</a>
+            <NavLink to={'/BookList'}>Listed Books</NavLink>
           </li>
           <li>
-            <a>Pages to Read</a>
+            <NavLink to={'/ReadBooks'}>Pages to Read</NavLink>
           </li>
         </ul>
       </div>
