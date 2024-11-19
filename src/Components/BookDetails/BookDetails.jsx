@@ -1,4 +1,4 @@
-import { CiStar } from "react-icons/ci";
+
 import { useLoaderData, useParams } from "react-router-dom";
 
 const BookDetails = () => {
@@ -53,7 +53,7 @@ const BookDetails = () => {
                 <button className="btn btn-accent text-white">Wishlist</button>
             </div>
         </div>
-      </div>
+    </div>
     
   );
 };

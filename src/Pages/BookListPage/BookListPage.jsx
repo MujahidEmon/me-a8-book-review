@@ -1,9 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+import ReadList from "../../Components/ReadList/ReadList";
 
 
 const BookListPage = () => {
+    const books = useLoaderData()
     return (
         <div>
-            <h1>Book List here</h1>
+            {
+                books.map(book => <ReadList key={book.id} book={book}></ReadList>)
+            }
         </div>
     );
 };
