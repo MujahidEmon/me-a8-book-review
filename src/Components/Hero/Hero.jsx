@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="hero rounded-3xl  bg-[#1313130D] mt-8 min-h-fit">
@@ -5,7 +7,7 @@ const Hero = () => {
         <div>
           <h1 className="text-[56px] playFair font-bold">Books to freshen up <br />your bookshelf</h1>
           
-          <button className="btn bg-[#23BE0A] text-xl text-white mt-3">View The List</button>
+          <Link to={'/BookList'} className="btn bg-[#23BE0A] text-xl text-white mt-3">View The List</Link>
         </div>
         <img
           src="/src/assets/heroBook.png"
