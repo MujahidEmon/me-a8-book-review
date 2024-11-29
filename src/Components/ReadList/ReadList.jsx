@@ -1,9 +1,10 @@
 import { HiMiniUsers } from "react-icons/hi2";
 import { RiPagesLine } from "react-icons/ri";
 import { SlCalender } from "react-icons/sl";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
-const ReadList = ({ book }) => {
+const ReadList = () => {
+  const book = useLoaderData();
   const {
     id,
     bookName,
@@ -19,7 +20,7 @@ const ReadList = ({ book }) => {
 
   return (
     <div
-      className="flex lg:flex-row gap-10 justify-between border-2 rounded-xl mb-4 lg:h-[250px] h-fit  flex-col p-7 mx-5 md:p-3"
+      className="flex lg:flex-row gap-10 justify-between border-2 rounded-xl mb-4 lg:h-[250px] h-fit  flex-col p-7 lg:mx-0 mx-5 md:p-3"
     >
       <figure className=" bg-[#F3F3F3] w-full lg:w-1/5 lg:p-12 p-5 rounded-xl flex items-center justify-center">
         <img src={book.image} alt={book.bookName} className="" />
@@ -33,14 +34,14 @@ const ReadList = ({ book }) => {
         </div>
         <div className="flex work-sans text-sm lg:text-base flex-row items-center gap-2 my-3">
           <p className="font-bold lg:flex hidden">Tag: </p>
-          {tag.slice(0,2).map((t) => (
+          {/* {tag.slice(0,2).map((t) => (
             <h3
               key={t}
               className="bg-[#23BE0A0A] text-sm text-[#23BE0A] w-fit px-3 py-1 font-bold rounded-full"
             >
               #{t}
             </h3>
-          ))}
+          ))} */}
           <div className="text-[#131313B3] flex gap-1 items-center">
             <SlCalender></SlCalender>
             <p>Year of Publishing: {book.yearOfPublishing}</p>

@@ -1,10 +1,15 @@
 
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import { getItem, saveItems } from "../../Utils/LocalStorage";
 
 const BookDetails = () => {
   const books = useLoaderData();
   const { id } = useParams();
   
+  const handleRead = (item) =>{
+    // getItem(id);
+    saveItems(item)
+  }
   const book = books.find((book) => book.id === id);
   const tag = book.tags
   console.log(book);
@@ -49,8 +54,8 @@ const BookDetails = () => {
                 <p className="text-[#131313B3]">Rating: <span className="font-bold text-black">{book.rating}</span></p>
             </div>
             <div className="flex gap-1 items-center">
-                <button className="btn btn-outline">Read</button>
-                <button className="btn btn-accent text-white">Wishlist</button>
+                <button onClick={() => handleRead(book)} className="btn btn-outline">Read</button>
+                <Link className="btn btn-accent text-white">Wishlist</Link>
             </div>
         </div>
     </div>
