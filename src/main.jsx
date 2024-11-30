@@ -13,6 +13,7 @@ import Home from './Pages/HomePage/Home.jsx';
 import BookDetails from './Components/BookDetails/BookDetails.jsx';
 import WishList from './Components/WishList/WishList.jsx';
 import ReadList from './Components/ReadList/ReadList.jsx';
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
@@ -59,5 +60,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <Toaster></Toaster>
   </StrictMode>,
 )

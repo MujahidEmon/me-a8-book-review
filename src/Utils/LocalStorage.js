@@ -1,11 +1,11 @@
 import toast from "react-hot-toast"
 export const getItem = () =>{
-    let Item = []
+    let Items = []
     const storedItems = localStorage.getItem('Items')
     if(storedItems) {
-        Item = JSON.parse(storedItems)
+        Items = JSON.parse(storedItems)
     }
-    return Item;
+    return Items;
 }
 
 // Function  for save
@@ -14,18 +14,10 @@ export const saveItems = (Item) =>{
     //  Checking is Exist
     const isExist = Items.find(b => b.id === Item.id)
     if(isExist){
-      return toast.error('Already Bookmarked')
+      return toast.error('Already added to Read List')
     }
     Items.push(Item)
-    localStorage.setItem('blogs', JSON.stringify(Items))
-    toast.success('Bookmark saved')
+    localStorage.setItem('Items', JSON.stringify(Items))
+    toast.success('Added to Read List')
 }
 
-// Function to Delete
-
-export const deleteItem = id =>{
-    let Items = getItem();
-    const remaining = Items.filter(b => b.id !== id) 
-    localStorage.setItem('Items', JSON.stringify(remaining))
-    toast.success('Deleted Successfully')
-}   

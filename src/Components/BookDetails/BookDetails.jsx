@@ -1,6 +1,7 @@
 
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { getItem, saveItems } from "../../Utils/LocalStorage";
+import {saveItems } from "../../Utils/LocalStorage";
+import { deleteItem, saveWishBook } from "../../Utils/LsWishlist";
 
 const BookDetails = () => {
   const books = useLoaderData();
@@ -9,6 +10,10 @@ const BookDetails = () => {
   const handleRead = (item) =>{
     // getItem(id);
     saveItems(item)
+    deleteItem(item.id)
+  }
+  const handleWishlist = (book) => {
+    saveWishBook(book)
   }
   const book = books.find((book) => book.id === id);
   const tag = book.tags
@@ -55,7 +60,7 @@ const BookDetails = () => {
             </div>
             <div className="flex gap-1 items-center">
                 <button onClick={() => handleRead(book)} className="btn btn-outline">Read</button>
-                <Link className="btn btn-accent text-white">Wishlist</Link>
+                <button onClick={() => handleWishlist(book)} className="btn btn-accent text-white">Wishlist</button>
             </div>
         </div>
     </div>
