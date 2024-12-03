@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -73,11 +73,11 @@ const ReadPage = () => {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-center mb-6">Pages to Read</h1>
+    <div className="p-2">
+      <h1 className="lg:text-2xl text-lg font-bold text-center mb-6">Pages to Read</h1>
       {readBooks.length > 0 ? (
-        <div className="w-full max-w-4xl mx-auto">
-          <Bar data={data} options={options} />
+        <div className="w-full  ">
+          <Bar className="text-sm" data={data} options={options} />
         </div>
       ) : (
         <p className="text-center text-gray-600">

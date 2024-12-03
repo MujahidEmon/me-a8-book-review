@@ -1,5 +1,5 @@
 
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import {useLoaderData, useParams } from "react-router-dom";
 import {saveItems } from "../../Utils/LocalStorage";
 import { deleteItem, saveWishBook } from "../../Utils/LsWishlist";
 
@@ -27,10 +27,10 @@ const BookDetails = () => {
         <img
           src={book.image}
           alt={book.bookName}
-          className="w-full"
+          className="lg:w-full w-48"
         />
       </figure>
-      <div className="w-2/3">
+      <div className="lg:w-2/3 w-full">
         <div className=" flex flex-col gap-y-2">
             <h2 className="font-bold text-2xl playFair">{book.bookName}</h2>
             <p className="font-medium text-base">

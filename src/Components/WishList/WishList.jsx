@@ -1,19 +1,13 @@
-import { useEffect, useState } from "react";
-import { getWishlistBook } from "../../Utils/LsWishlist";
 import ReadBookCard from "../ReadBookCard/ReadBookCard";
+import { useOutletContext } from "react-router-dom";
 
 
 const WishList = () => {
-    const [books, setBooks] = useState([])
-
-    useEffect(() => {
-        const wishBooks = getWishlistBook()
-        setBooks(wishBooks)
-    },[])
+    const {wishlistBooks} = useOutletContext();
     return (
         <div>
             {
-                books.map(book => <ReadBookCard key={book.id} book={book}></ReadBookCard>)
+                wishlistBooks.map(book => <ReadBookCard key={book.id} book={book}></ReadBookCard>)
             }
         </div>
     );

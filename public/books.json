@@ -10,7 +10,7 @@
     "category": "Historical Fiction",
     "tags": ["Africa", "Colonialism", "Tragedy"],
     "publisher": "William Heinemann",
-    "yearOfPublishing": 1958
+    "yearOfPublishing": 2003
   },
   {
     "id": "2",
@@ -23,7 +23,7 @@
     "category": "Fairy Tales",
     "tags": ["Fantasy", "Children", "Morality"],
     "publisher": "C.A. Reitzel",
-    "yearOfPublishing": 1836
+    "yearOfPublishing": 1996
   },
   {
     "id": "3",
@@ -36,7 +36,7 @@
     "category": "Epic Poetry",
     "tags": ["Philosophy", "Religion", "Medieval"],
     "publisher": "Giovanni Boccaccio",
-    "yearOfPublishing": 1315
+    "yearOfPublishing": 1988
   },
   {
     "id": "4",
@@ -49,7 +49,7 @@
     "category": "Epic",
     "tags": ["Mythology", "Ancient History", "Adventure"],
     "publisher": "Unknown",
-    "yearOfPublishing": -1700
+    "yearOfPublishing": 1999
   },
   {
     "id": "5",
@@ -62,7 +62,7 @@
     "category": "Religious Text",
     "tags": ["Philosophy", "Religion", "Theology"],
     "publisher": "Unknown",
-    "yearOfPublishing": -600
+    "yearOfPublishing": 2001
   },
   {
     "id": "6",
@@ -75,7 +75,7 @@
     "category": "Folk Tales",
     "tags": ["Fantasy", "Adventure", "Middle Eastern"],
     "publisher": "Unknown",
-    "yearOfPublishing": 1200
+    "yearOfPublishing": 1995
   },
   {
     "id": "7",
@@ -88,7 +88,7 @@
     "category": "Saga",
     "tags": ["Historical Fiction", "Norwegian", "Medieval"],
     "publisher": "Unknown",
-    "yearOfPublishing": 1350
+    "yearOfPublishing": 2010
   },
   {
     "id": "8",
@@ -101,7 +101,7 @@
     "category": "Romantic Fiction",
     "tags": ["Romance", "Class", "Humor"],
     "publisher": "T. Egerton",
-    "yearOfPublishing": 1813
+    "yearOfPublishing": 2005
   },
   {
     "id": "9",
@@ -114,6 +114,6 @@
     "category": "Realist Novel",
     "tags": ["Realism", "Social Commentary", "France"],
     "publisher": "Michel Lévy Frères",
-    "yearOfPublishing": 1835
+    "yearOfPublishing": 2000
   }
 ]

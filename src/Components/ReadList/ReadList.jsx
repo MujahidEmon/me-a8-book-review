@@ -1,21 +1,13 @@
-import { useEffect, useState } from "react";
-
-import { getItem } from "../../Utils/LocalStorage";
 import ReadBookCard from "../ReadBookCard/ReadBookCard";
+import { useOutletContext } from "react-router-dom";
 
 const ReadList = () => {
-  
-  const [books, setBooks] = useState([]);
+  const {readBook} = useOutletContext();
 
-  useEffect(() => {
-    const readBooks = getItem()
-    setBooks(readBooks)
-  },[])
-  
   return (
     <div>
       {
-        books.map(book => <ReadBookCard key={book.id} book={book}></ReadBookCard>)
+        readBook.map(book => <ReadBookCard key={book.id} book={book}></ReadBookCard>)
       }
     </div>
   );
