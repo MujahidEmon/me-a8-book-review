@@ -24,13 +24,13 @@ const BookListPage = () => {
               {/* <details open> */}
               <ul className="bg-base-200 w-fit    ">
                 <li>
-                  <a>Rating</a>
+                  <Link>Rating</Link>
                 </li>
                 <li>
-                  <a>Number of Pages</a>
+                  <Link>Number of Pages</Link>
                 </li>
                 <li>
-                  <a>Published Year</a>
+                  <Link>Published Year</Link>
                 </li>
               </ul>
               {/* </details>s */}

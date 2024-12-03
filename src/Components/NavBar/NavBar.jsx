@@ -26,13 +26,13 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <NavLink>Home</NavLink>
+              <NavLink to={'/'}>Home</NavLink>
             </li>
             <li>
-              <NavLink>Listed Books</NavLink>
+              <NavLink to={'/BookList'}>Listed Books</NavLink>
             </li>
             <li>
-              <NavLink>Pages to Read</NavLink>
+              <NavLink to={'/ReadBooks'}>Pages to Read</NavLink>
             </li>
             <div className="navbar-end flex lg:flex-row flex-col items-center gap-2">
                 <a className="btn bg-[#23BE0A] text-white">Sign In</a>

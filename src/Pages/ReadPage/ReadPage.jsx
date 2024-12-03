@@ -76,7 +76,7 @@ const ReadPage = () => {
     <div className="p-6">
       <h1 className="text-2xl font-bold text-center mb-6">Pages to Read</h1>
       {readBooks.length > 0 ? (
-        <div className="w-full max-w-3xl mx-auto">
+        <div className="w-full max-w-4xl mx-auto">
           <Bar data={data} options={options} />
         </div>
       ) : (
