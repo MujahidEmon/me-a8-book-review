@@ -10,7 +10,7 @@ const Hero = () => {
           <Link to={'/BookList'} className="btn bg-[#23BE0A] md:text-xl text-normal text-white mt-3">View The List</Link>
         </div>
         <img
-          src="/src/assets/heroBook.png"
+          src="../heroBook.png"
           className="md:max-w-sm max-w-48 rounded-lg "
         />
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from '../../Components/Hero/Hero';
 import { useLoaderData } from 'react-router-dom';
 import BookCard from '../../Components/BookCard/BookCard';

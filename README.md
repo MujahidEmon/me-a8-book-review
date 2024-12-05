@@ -9,5 +9,4 @@ This is a React-based book review website where users can explore books, add the
 - 🔍 Sort books by rating, pages, or publishing year.
 - 🎨 Fully responsive design for desktop and mobile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots

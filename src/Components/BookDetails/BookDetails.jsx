@@ -6,6 +6,9 @@ import { deleteItem, saveWishBook } from "../../Utils/LsWishlist";
 const BookDetails = () => {
   const books = useLoaderData();
   const { id } = useParams();
+  const intId = parseInt(id)
+  console.log(typeof(books))
+  console.log(books);
   
   const handleRead = (item) =>{
     // getItem(id);
@@ -15,12 +18,12 @@ const BookDetails = () => {
   const handleWishlist = (book) => {
     saveWishBook(book)
   }
-  const book = books.find((book) => book.id === id);
+  const book = books.find((b) => String(b.id) === id);
   const tag = book.tags
-  console.log(book);
+  // console.log(id);
   return (
     <div
-      to={`/book/${id}`}
+      // to={`/book/${id}`}
       className="flex lg:flex-row gap-10 justify-between  flex-col px-7 md:px-3 py-6"
     >
       <figure className=" bg-[#F3F3F3] w-full lg:w-1/3 lg:p-12 p-5 rounded-xl flex items-center justify-center">

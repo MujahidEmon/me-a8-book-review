@@ -104,7 +104,7 @@ const BookListPage = () => {
           <Link
             onClick={() => setTabIndex(1)}
             to={`wishlist`}
-            className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 rounded-t-lg  text-gray-50 dark:text-gray-900 ${tabIndex === 1 ? "border-2 border-b-0" : "border-b-2"}`}
+            className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 rounded-t-lg  text-gray-900 ${tabIndex === 1 ? "border-2 border-b-0" : "border-b-2"}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

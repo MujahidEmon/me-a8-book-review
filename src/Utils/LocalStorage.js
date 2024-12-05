@@ -12,6 +12,7 @@ export const getItem = () =>{
 export const saveItems = (Item) =>{
      let Items = getItem();
     //  Checking is Exist
+    console.log(Items)
     const isExist = Items.find(b => b.id === Item.id)
     if(isExist){
       return toast.error('Already added to Read List')

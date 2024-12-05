@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import {
@@ -13,16 +13,19 @@ import BookDetails from './Components/BookDetails/BookDetails.jsx';
 import WishList from './Components/WishList/WishList.jsx';
 import ReadList from './Components/ReadList/ReadList.jsx';
 import { Toaster } from 'react-hot-toast';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
+
     path: "/",
     element: <HomePage></HomePage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
-        index:"/",
+        index:true,
         element: <Home></Home>,
-        loader: () => fetch('../books.json')
+        loader: () => fetch(`../books.json`)
       },
       {
         path: '/BookList',
@@ -47,9 +50,9 @@ const router = createBrowserRouter([
         element: <ReadPage></ReadPage>
       },
       {
-        path: '/book/:id',
+        path: '/:id',
         element: <BookDetails></BookDetails>,
-        loader: () => fetch('/public/books.json')
+        loader: () => fetch('../books.json')
       }
       
     ]
@@ -57,8 +60,8 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <>
     <RouterProvider router={router} />
     <Toaster></Toaster>
-  </StrictMode>,
+  </>,
 )
